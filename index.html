@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serene Flow Yoga accessible video library with custom keyboard-friendly video controls and captions.">
+  <title>Serene Flow Yoga — Accessible Class Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">SF</span>
+      <div><strong>Serene Flow</strong><span>Yoga Retreat</span></div>
+    </div>
+    <nav aria-label="Primary navigation">
+      <a href="#classes">Classes</a>
+      <a href="#accessibility">Accessibility</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">ACCESSIBLE YOGA LIBRARY</p>
+        <h1 id="page-title">Move slowly.<br><span>Breathe deeply.</span></h1>
+        <p>Six guided retreat sessions with clear captions, keyboard controls, large touch targets and friendly screen-reader announcements.</p>
+        <a class="hero-button" href="#classes">Explore classes <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Person practicing yoga outdoors at a peaceful retreat"></div>
+    </section>
+
+    <section class="intro" id="classes" aria-labelledby="classes-title">
+      <div>
+        <p class="eyebrow">TODAY'S PRACTICE</p>
+        <h2 id="classes-title">Choose your flow</h2>
+      </div>
+      <p class="intro-note">Tip: Press <kbd>Space</kbd> to play or pause, <kbd>←</kbd>/<kbd>→</kbd> to seek, and <kbd>↑</kbd>/<kbd>↓</kbd> to adjust volume.</p>
+    </section>
+
+    <section class="class-grid" aria-label="Yoga classes">
+      <article class="class-card featured">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt" default>
+          </video>
+          <div class="video-badge">25 MIN · BEGINNER</div>
+          <div class="controls" aria-label="Video controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-1">Seek through video</label>
+            <input id="seek-1" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-1">Volume</label>
+            <input id="volume-1" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="class-meta"><span>01</span><span>Morning Reset</span></div>
+          <h3>Ground &amp; Flow</h3>
+          <p>A gentle full-body practice to wake up your breath, spine and attention.</p>
+          <div class="tags"><span>Mobility</span><span>Breathwork</span><span>Beginner</span></div>
+        </div>
+      </article>
+
+      <article class="class-card">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt">
+          </video>
+          <div class="video-badge">18 MIN · ALL LEVELS</div>
+          <div class="controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-2">Seek through video</label>
+            <input id="seek-2" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-2">Volume</label>
+            <input id="volume-2" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body"><div class="class-meta"><span>02</span><span>Breath &amp; Balance</span></div><h3>Calm the Mind</h3><p>Slow movement and breathing for a quieter, more focused practice.</p><div class="tags"><span>Breathing</span><span>Balance</span></div></div>
+      </article>
+
+      <article class="class-card">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=1000&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt">
+          </video>
+          <div class="video-badge">30 MIN · GENTLE</div>
+          <div class="controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-3">Seek through video</label>
+            <input id="seek-3" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-3">Volume</label>
+            <input id="volume-3" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body"><div class="class-meta"><span>03</span><span>Restorative</span></div><h3>Evening Unwind</h3><p>Longer holds and mindful breathing to release the day's tension.</p><div class="tags"><span>Relaxation</span><span>Stretch</span></div></div>
+      </article>
+
+      <article class="class-card">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?auto=format&fit=crop&w=1000&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt">
+          </video>
+          <div class="video-badge">22 MIN · ACTIVE</div>
+          <div class="controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-4">Seek through video</label>
+            <input id="seek-4" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-4">Volume</label>
+            <input id="volume-4" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body"><div class="class-meta"><span>04</span><span>Strength</span></div><h3>Steady &amp; Strong</h3><p>A playful sequence for building stability through the legs and core.</p><div class="tags"><span>Strength</span><span>Core</span></div></div>
+      </article>
+
+      <article class="class-card">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=1000&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt">
+          </video>
+          <div class="video-badge">15 MIN · MINDFUL</div>
+          <div class="controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-5">Seek through video</label>
+            <input id="seek-5" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-5">Volume</label>
+            <input id="volume-5" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body"><div class="class-meta"><span>05</span><span>Mindfulness</span></div><h3>Pause &amp; Notice</h3><p>A short practice centered on posture, presence and simple awareness.</p><div class="tags"><span>Mindful</span><span>Easy</span></div></div>
+      </article>
+
+      <article class="class-card">
+        <div class="video-shell" data-player>
+          <video preload="metadata" playsinline poster="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=1000&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track kind="captions" srclang="en" label="English captions" src="captions.vtt">
+          </video>
+          <div class="video-badge">35 MIN · SLOW FLOW</div>
+          <div class="controls">
+            <button class="icon-btn play-btn" type="button" aria-label="Play video">▶</button>
+            <label class="sr-only" for="seek-6">Seek through video</label>
+            <input id="seek-6" class="seek" type="range" min="0" max="100" value="0" step="0.1" aria-valuetext="0 minutes 0 seconds">
+            <button class="time-btn" type="button" aria-label="Current time">0:00 / 0:00</button>
+            <button class="icon-btn mute-btn" type="button" aria-label="Mute video">🔊</button>
+            <label class="sr-only" for="volume-6">Volume</label>
+            <input id="volume-6" class="volume" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volume">
+            <button class="control-btn captions-btn" type="button" aria-label="Turn captions on">CC</button>
+            <button class="control-btn fullscreen-btn" type="button" aria-label="Enter fullscreen">⛶</button>
+          </div>
+        </div>
+        <div class="card-body"><div class="class-meta"><span>06</span><span>Weekend Flow</span></div><h3>Open &amp; Restore</h3><p>A complete slow-flow session to reconnect with the body and breath.</p><div class="tags"><span>Full body</span><span>Restore</span></div></div>
+      </article>
+    </section>
+
+    <section class="accessibility-panel" id="accessibility" aria-labelledby="accessibility-title">
+      <div>
+        <p class="eyebrow">BUILT FOR EVERY BODY</p>
+        <h2 id="accessibility-title">Accessibility is part of the practice.</h2>
+      </div>
+      <div class="access-grid">
+        <div><strong>⌨</strong><h3>Keyboard first</h3><p>Every control has a visible focus state and can be reached without a mouse.</p></div>
+        <div><strong>CC</strong><h3>Captions included</h3><p>Use the CC button to show or hide the English caption track.</p></div>
+        <div><strong>●</strong><h3>Screen-reader friendly</h3><p>Live announcements describe playback state, time and volume changes.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <footer><p>Serene Flow Yoga Retreat · Accessible practice for everyone.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
